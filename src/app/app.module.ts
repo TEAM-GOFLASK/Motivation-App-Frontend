@@ -11,6 +11,8 @@ import { HeropageComponent } from './heropage/heropage.component';
 import { SidebarComponent } from './homepage/sidebar/sidebar.component';
 import { NavbarComponent } from './homepage/navbar/navbar.component';
 import { ContentComponent } from './homepage/content/content.component';
+import { HeronavbarComponent } from './heropage/heronavbar/heronavbar.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { ContentComponent } from './homepage/content/content.component';
     SidebarComponent,
     NavbarComponent,
     ContentComponent,
+    HeronavbarComponent,
+    EditProfileComponent,
     
 
   ],
