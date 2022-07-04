@@ -7,12 +7,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { AdminComponent } from './admin/admin.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { HeropageComponent } from './heropage/heropage.component';
+import { SidebarComponent } from './homepage/sidebar/sidebar.component';
+import { NavbarComponent } from './homepage/navbar/navbar.component';
+import { ContentComponent } from './homepage/content/content.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
-    HomepageComponent
+    HomepageComponent,
+    HeropageComponent,
+    SidebarComponent,
+    NavbarComponent,
+    ContentComponent,
+    
+
   ],
   imports: [
     BrowserModule,
