@@ -12,7 +12,8 @@ import { SidebarComponent } from './homepage/sidebar/sidebar.component';
 import { NavbarComponent } from './homepage/navbar/navbar.component';
 import { ContentComponent } from './homepage/content/content.component';
 import { HeronavbarComponent } from './heropage/heronavbar/heronavbar.component';
-import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { EditprofileComponent } from './editprofile/editprofile.component';
+
 
 
 @NgModule({
@@ -25,8 +26,9 @@ import { EditProfileComponent } from './edit-profile/edit-profile.component';
     NavbarComponent,
     ContentComponent,
     HeronavbarComponent,
-    EditProfileComponent,
-    
+    EditprofileComponent,
+
+
 
   ],
   imports: [
