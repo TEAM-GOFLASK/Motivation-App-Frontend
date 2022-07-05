@@ -13,7 +13,8 @@ import { NavbarComponent } from './homepage/navbar/navbar.component';
 import { ContentComponent } from './homepage/content/content.component';
 import { HeronavbarComponent } from './heropage/heronavbar/heronavbar.component';
 import { EditprofileComponent } from './editprofile/editprofile.component';
-
+import { ReportsComponent } from './admin/reports/reports.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 @NgModule({
@@ -27,15 +28,15 @@ import { EditprofileComponent } from './editprofile/editprofile.component';
     ContentComponent,
     HeronavbarComponent,
     EditprofileComponent,
-
-
+    ReportsComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatGridListModule
+    MatGridListModule,
+    MatProgressBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
