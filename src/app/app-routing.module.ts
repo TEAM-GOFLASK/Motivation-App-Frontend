@@ -13,18 +13,21 @@ import { AdminComponent } from './admin/admin.component';
 import { EditprofileComponent } from './editprofile/editprofile.component';
 import { HeropageComponent } from './heropage/heropage.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { FooterComponent } from './footer/footer.component';
+
 
 const routes: Routes = [
-  { path:"admin", component: AdminComponent },
-  { path:"homepage", component: HomepageComponent },
-  { path:"heropage", component: HeropageComponent },
-  { path:"editprofile", component: EditprofileComponent },
+  { path: 'admin', component: AdminComponent },
+  { path: 'homepage', component: HomepageComponent },
+  { path: 'heropage', component: HeropageComponent },
+  { path: 'editprofile', component: EditprofileComponent },
   { path: 'profile', component: StaffProfileComponent },
   { path: 'staff-page', component: StaffPageComponent },
   { path: 'single-post', component: SinglePostComponent },
   { path: 'category', component: CategoryComponent },
   { path: 'staff-content-form', component: StaffContentFormComponent },
   { path: 'category-form', component: CategoryFormComponent },
+  { path: 'footer', component:FooterComponent},
 ];
 
 @NgModule({
@@ -32,4 +35,4 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule { }
-export const routingComponents=[StaffProfileComponent,StaffPageComponent,CategoryComponent,StaffContentFormComponent,CategoryFormComponent]
+export const routingComponents=[StaffProfileComponent,StaffPageComponent,CategoryComponent,StaffContentFormComponent,CategoryFormComponent,FooterComponent]

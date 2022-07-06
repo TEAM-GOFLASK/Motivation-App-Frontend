@@ -23,6 +23,7 @@ import { CategoryComponent } from './category/category.component';
 import { StaffPostComponent } from './staff-post/staff-post.component';
 import { CategoryFormComponent } from './category-form/category-form.component';
 import { StaffContentFormComponent } from './staff-content-form/staff-content-form.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { StaffContentFormComponent } from './staff-content-form/staff-content-fo
     StaffPostComponent,
     CategoryFormComponent,
     StaffContentFormComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
