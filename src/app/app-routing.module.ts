@@ -1,3 +1,4 @@
+import { EditStaffprofileComponent } from './edit-staffprofile/edit-staffprofile.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -27,7 +28,8 @@ const routes: Routes = [
   { path: 'category', component: CategoryComponent },
   { path: 'staff-content-form', component: StaffContentFormComponent },
   { path: 'category-form', component: CategoryFormComponent },
-  { path: 'footer', component:FooterComponent},
+  { path: 'footer', component: FooterComponent },
+  { path: 'edit-staffprofile', component:EditStaffprofileComponent},
 ];
 
 @NgModule({
@@ -35,4 +37,4 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule { }
-export const routingComponents=[StaffProfileComponent,StaffPageComponent,CategoryComponent,StaffContentFormComponent,CategoryFormComponent,FooterComponent]
+export const routingComponents=[StaffProfileComponent,StaffPageComponent,CategoryComponent,StaffContentFormComponent,CategoryFormComponent,FooterComponent,EditStaffprofileComponent]

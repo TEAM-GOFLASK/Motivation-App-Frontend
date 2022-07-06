@@ -24,6 +24,7 @@ import { StaffPostComponent } from './staff-post/staff-post.component';
 import { CategoryFormComponent } from './category-form/category-form.component';
 import { StaffContentFormComponent } from './staff-content-form/staff-content-form.component';
 import { FooterComponent } from './footer/footer.component';
+import { EditStaffprofileComponent } from './edit-staffprofile/edit-staffprofile.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { FooterComponent } from './footer/footer.component';
     CategoryFormComponent,
     StaffContentFormComponent,
     FooterComponent,
+    EditStaffprofileComponent,
   ],
   imports: [
     BrowserModule,
