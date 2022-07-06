@@ -15,7 +15,8 @@ import { HeronavbarComponent } from './heropage/heronavbar/heronavbar.component'
 import { EditprofileComponent } from './editprofile/editprofile.component';
 import { ReportsComponent } from './admin/reports/reports.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
-
+import { AdmincontentComponent } from './admin/admincontent/admincontent.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     HeronavbarComponent,
     EditprofileComponent,
     ReportsComponent,
+    AdmincontentComponent,
+
 
   ],
   imports: [
@@ -37,6 +40,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     BrowserAnimationsModule,
     MatGridListModule,
     MatProgressBarModule,
+    NgCircleProgressModule.forRoot()
+
   ],
   providers: [],
   bootstrap: [AppComponent]
