@@ -9,6 +9,8 @@ import { RegisterComponent } from './authentication/register/register.component'
 import { LoginComponent } from './authentication/login/login.component';
 import { StudentComponent } from './student/student.component';
 import { ErrorInterceptor, JwtInterceptor } from './_helpers';
+import { StdProfileComponent } from './student/std-profile/std-profile.component';
+import { StdPostFormComponent } from './student/std-post-form/std-post-form.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { ErrorInterceptor, JwtInterceptor } from './_helpers';
     RegisterComponent,
     LoginComponent,
     StudentComponent,
+    StdProfileComponent,
+    StdPostFormComponent,
 
   ],
   imports: [
