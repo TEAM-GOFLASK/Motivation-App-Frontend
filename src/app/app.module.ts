@@ -1,12 +1,16 @@
-import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
 
 import { AppRoutingModule,routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RegisterComponent } from './authentication/register/register.component';
+import { LoginComponent } from './authentication/login/login.component';
+import { StudentComponent } from './student/student.component';
 import { AdminComponent } from './admin/admin.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HeropageComponent } from './heropage/heropage.component';
@@ -26,9 +30,14 @@ import { StaffContentFormComponent } from './staff-content-form/staff-content-fo
 import { FooterComponent } from './footer/footer.component';
 import { EditStaffprofileComponent } from './edit-staffprofile/edit-staffprofile.component';
 
+import { ErrorInterceptor, JwtInterceptor } from './_helpers';
+
 @NgModule({
   declarations: [
     AppComponent,
+    RegisterComponent,
+    LoginComponent,
+    StudentComponent,
     routingComponents,
     AdminComponent,
     HomepageComponent,
@@ -52,12 +61,19 @@ import { EditStaffprofileComponent } from './edit-staffprofile/edit-staffprofile
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     MatGridListModule,
     MatProgressBarModule,
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

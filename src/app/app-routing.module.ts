@@ -2,8 +2,9 @@ import { EditStaffprofileComponent } from './edit-staffprofile/edit-staffprofile
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { FormsModule } from '@angular/forms';
-
+import { LoginComponent } from './authentication/login/login.component';
+import { RegisterComponent } from './authentication/register/register.component';
+import { StudentComponent } from './student/student.component';
 import { CategoryFormComponent } from './category-form/category-form.component';
 import { StaffContentFormComponent } from './staff-content-form/staff-content-form.component';
 import { CategoryComponent } from './category/category.component';
@@ -18,10 +19,13 @@ import { FooterComponent } from './footer/footer.component';
 
 
 const routes: Routes = [
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'admin', component: AdminComponent },
   { path: 'homepage', component: HomepageComponent },
   { path: 'heropage', component: HeropageComponent },
   { path: 'editprofile', component: EditprofileComponent },
+  { path: 'student-page', component: StudentComponent },
   { path: 'profile', component: StaffProfileComponent },
   { path: 'staff-page', component: StaffPageComponent },
   { path: 'single-post', component: SinglePostComponent },
