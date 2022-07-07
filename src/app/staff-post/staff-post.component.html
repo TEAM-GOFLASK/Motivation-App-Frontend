@@ -14,12 +14,12 @@
           </a>
         </div>
         <br>
-        <div class="card" style="">
+        <div class="card">
           <img
             src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
             class="card-img-top"
             alt="Fissure in Sandstone"
-            style=""
+
           />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -53,10 +53,24 @@
               <i class="far fa-trash-alt me-2 "></i>
               <p class="mb-0 ">Delete</p>
             </a>
-            
+
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <tbody>
+    <tr *ngFor="let post of postArr">
+        <th scope="row">{{post.id}}</th>
+        <td>{{post.content_name}}</td>
+
+
+    </tr>
+</tbody>
 </div>
+
+
+
+
+
