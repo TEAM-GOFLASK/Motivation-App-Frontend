@@ -5,12 +5,14 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 import { AppRoutingModule,routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './authentication/register/register.component';
 import { LoginComponent } from './authentication/login/login.component';
 import { StudentComponent } from './student/student.component';
+import { AdmincontentComponent } from './admin/admincontent/admincontent.component';
 import { AdminComponent } from './admin/admin.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HeropageComponent } from './heropage/heropage.component';
@@ -48,6 +50,7 @@ import { ErrorInterceptor, JwtInterceptor } from './_helpers';
     HeronavbarComponent,
     EditprofileComponent,
     ReportsComponent,
+    AdmincontentComponent,
     SinglePostComponent,
     StaffProfileComponent,
     StaffPageComponent,
@@ -67,6 +70,8 @@ import { ErrorInterceptor, JwtInterceptor } from './_helpers';
     BrowserAnimationsModule,
     MatGridListModule,
     MatProgressBarModule,
+    NgCircleProgressModule.forRoot()
+
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
