@@ -27,6 +27,8 @@ import { CategoryComponent } from './category/category.component';
 import { StaffPostComponent } from './staff-post/staff-post.component';
 import { CategoryFormComponent } from './category-form/category-form.component';
 import { StaffContentFormComponent } from './staff-content-form/staff-content-form.component';
+import { FooterComponent } from './footer/footer.component';
+import { EditStaffprofileComponent } from './edit-staffprofile/edit-staffprofile.component';
 
 import { ErrorInterceptor, JwtInterceptor } from './_helpers';
 
@@ -53,6 +55,8 @@ import { ErrorInterceptor, JwtInterceptor } from './_helpers';
     StaffPostComponent,
     CategoryFormComponent,
     StaffContentFormComponent,
+    FooterComponent,
+    EditStaffprofileComponent,
   ],
   imports: [
     BrowserModule,
