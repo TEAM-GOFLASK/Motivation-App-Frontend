@@ -10,7 +10,11 @@ import { LoginComponent } from './authentication/login/login.component';
 import { StudentComponent } from './student/student.component';
 import { ErrorInterceptor, JwtInterceptor } from './_helpers';
 import { StdProfileComponent } from './student/std-profile/std-profile.component';
-import { StdPostFormComponent } from './student/std-post-form/std-post-form.component';
+import { StdPostFormComponent } from './student/std-post/std-post-form/std-post-form.component';
+import { StdPostComponent } from './student/std-post/std-post.component';
+import { PanelComponent } from './student/panel/panel.component';
+import { CategoriesComponent } from './student/panel/categories/categories.component';
+import { StdSuggestionComponent } from './student/panel/std-suggestion/std-suggestion.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +24,10 @@ import { StdPostFormComponent } from './student/std-post-form/std-post-form.comp
     StudentComponent,
     StdProfileComponent,
     StdPostFormComponent,
+    StdPostComponent,
+    PanelComponent,
+    CategoriesComponent,
+    StdSuggestionComponent,
 
   ],
   imports: [
