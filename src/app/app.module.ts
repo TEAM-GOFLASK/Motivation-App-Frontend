@@ -6,6 +6,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
 
+
 import { AppRoutingModule,routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './authentication/register/register.component';
